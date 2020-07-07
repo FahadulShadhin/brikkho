@@ -1,0 +1,25 @@
+{% extends 'store/base.html' %}
+{% load static %}
+
+{% block content %}
+    <h3>Cuttings</h3>
+    <hr>
+    <div class="row">
+        {% for product in products %}
+            {% if product.product_id == 'Ct' %}
+                <div class="col-lg-4" style="margin-top: 2rem;">
+                    <img class="thumbnail" src="{{ product.imageURL }}" alt="">
+                    <div class="box-element product">
+                        <h6><strong>{{ product.name }}</strong></h6>
+                        <hr>
+                        <button data-product="{{ product.id }}" data-action="add" class="btn btn-outline-secondary add-btn update-cart">
+                            Add to Cart
+                        </button>
+                        <a class="btn btn-outline-success" href="#">View</a>
+                        <h4 style="display: inline-block; float: right;">${{ product.price|floatformat:2 }}</h4>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endblock content %}
