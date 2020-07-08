@@ -47,7 +47,6 @@ class Order(models.Model):
             if item.product.digital == False:
                 shipping = True
                 
-
         return shipping
 
     @property
