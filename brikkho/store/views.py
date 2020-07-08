@@ -16,6 +16,72 @@ def store(request):
     }
     return render(request, 'store/store.html', context)
 
+def plants(request):
+    data = cartData(request) 
+    cartItems = data['cartItems']
+
+    products = Product.objects.all()
+    context = {
+        'products': products,
+        'cartItems': cartItems,
+    }
+    return render(request, 'store/plants.html', context)
+
+def seeds(request):
+    data = cartData(request) 
+    cartItems = data['cartItems']
+
+    products = Product.objects.all()
+    context = {
+        'products': products,
+        'cartItems': cartItems,
+    }
+    return render(request, 'store/seeds.html', context)
+
+def cuttings(request):
+    data = cartData(request) 
+    cartItems = data['cartItems']
+
+    products = Product.objects.all()
+    context = {
+        'products': products,
+        'cartItems': cartItems,
+    }
+    return render(request, 'store/cuttings.html', context)
+
+def fruits(request):
+    data = cartData(request) 
+    cartItems = data['cartItems']
+
+    products = Product.objects.all()
+    context = {
+        'products': products,
+        'cartItems': cartItems,
+    }
+    return render(request, 'store/fruits.html', context)
+
+def flowers(request):
+    data = cartData(request) 
+    cartItems = data['cartItems']
+
+    products = Product.objects.all()
+    context = {
+        'products': products,
+        'cartItems': cartItems,
+    }
+    return render(request, 'store/flowers.html', context)
+
+def vegetables(request):
+    data = cartData(request) 
+    cartItems = data['cartItems']
+
+    products = Product.objects.all()
+    context = {
+        'products': products,
+        'cartItems': cartItems,
+    }
+    return render(request, 'store/vegetables.html', context)
+
 def cart(request):
     data = cartData(request) 
     
@@ -99,72 +165,3 @@ def processOrder(request):
         )
 
     return JsonResponse('Payment complete', safe=False)
-
-########################################################33
-def plants(request):
-    data = cartData(request) 
-    cartItems = data['cartItems']
-
-    products = Product.objects.all()
-    context = {
-        'products': products,
-        'cartItems': cartItems,
-    }
-    return render(request, 'store/plants.html', context)
-
-def seeds(request):
-    data = cartData(request) 
-    cartItems = data['cartItems']
-
-    products = Product.objects.all()
-    context = {
-        'products': products,
-        'cartItems': cartItems,
-    }
-    return render(request, 'store/seeds.html', context)
-
-def cuttings(request):
-    data = cartData(request) 
-    cartItems = data['cartItems']
-
-    products = Product.objects.all()
-    context = {
-        'products': products,
-        'cartItems': cartItems,
-    }
-    return render(request, 'store/cuttings.html', context)
-
-def fruits(request):
-    data = cartData(request) 
-    cartItems = data['cartItems']
-
-    products = Product.objects.all()
-    context = {
-        'products': products,
-        'cartItems': cartItems,
-    }
-    return render(request, 'store/fruits.html', context)
-
-def flowers(request):
-    data = cartData(request) 
-    cartItems = data['cartItems']
-
-    products = Product.objects.all()
-    context = {
-        'products': products,
-        'cartItems': cartItems,
-    }
-    return render(request, 'store/flowers.html', context)
-
-def vegetables(request):
-    data = cartData(request) 
-    cartItems = data['cartItems']
-
-    products = Product.objects.all()
-    context = {
-        'products': products,
-        'cartItems': cartItems,
-    }
-    return render(request, 'store/vegetables.html', context)
-
-######################################################3
