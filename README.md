@@ -1,6 +1,9 @@
 # BRIKKHO.com
 E-commerce website with Django web framework
 
+## Database Model:
+<img src="images/erd.png">
+
 ## Run It:
 * Clone the project or download as zip:
 ```
