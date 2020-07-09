@@ -75,6 +75,7 @@
           </ul>
           <div class="form-inline my-2 my-lg-0">
             <a href="#"class="btn btn-outline-success my-2 my-sm-0">Login</a>
+            <a href="{% url 'register' %}"class="btn btn-outline-success my-2 my-sm-0 ml-3"> Register</a>
             
             <a href="{% url 'cart' %}">
                <img  id="cart-icon" src="{% static 'images/cart.jpg' %}">
@@ -86,10 +87,18 @@
     </nav>
 
     <div class="container">
-        <br>
-        {% block content %}
+      {% if messages %}
+        {% for message in messages %}
+          <div class="alert alert-{{ message.tags }}">
+            {{ message }}
+          </div>
+        {% endfor %}
+      {% endif %}
 
-        {% endblock content %}
+      <br>
+      {% block content %}
+
+      {% endblock content %}
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
