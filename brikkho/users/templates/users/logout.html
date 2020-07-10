@@ -1,0 +1,17 @@
+{% extends 'store/base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-lg-8">
+            <h2>Logged Out!</h2>
+            <div class="border-top pt-3">
+                <small class="text-muted">
+                    Log in again? <a href="{% url 'login' %}" class="ml-2">Sign In</a>
+                </small>
+            </div>
+        </div>
+    </div>
+    <br>
+{% endblock content %}

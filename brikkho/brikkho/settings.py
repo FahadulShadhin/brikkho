@@ -133,3 +133,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
 
 ### bootstrap css for crispy-forms
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+# after login redirect to homepage
+LOGIN_REDIRECT_URL = 'store'
+
+# change login route from default to 'login/'
+LOGIN_URL = 'login'
