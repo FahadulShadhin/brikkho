@@ -5,7 +5,7 @@ E-commerce website with Django web framework
 <img src="images/ermodel.png">
 
 ## Technologies Used:
- Html, CSS, Bootstrap, Javascrpit, Django, sqlite3
+ Html, CSS, Bootstrap, Javascrpit, Django, Sqlite3
 
 ## Run It:
 * Clone the project or download as zip:
