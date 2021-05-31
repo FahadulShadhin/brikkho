@@ -1,5 +1,5 @@
 # BRIKKHO.com
-E-commerce website with Django web framework
+E-commerce website created with Django
 
 ## Database Model:
 <img src="images/ermodel.png">
