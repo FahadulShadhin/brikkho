@@ -18,7 +18,7 @@ $ git clone https://github.com/FahadulShadhin/BRIKKHO-dot-com.git
 $ pip install -r requirements.txt
 ```
 
-* cd to 'brikkho' derectory then run the following command:
+* cd to src and run the following command:
 ```
 $ python manage.py runserver
 ```
