@@ -2,7 +2,7 @@
 E-commerce website created with Django
 
 ## Database Model:
-<img src="images/ermodel.png">
+<img src="erDiagram/ermodel.jpg">
 
 ## Technologies Used:
  Django, Html, CSS, Bootstrap, Javascrpit, Sqlite3
