@@ -2,7 +2,7 @@
 *.bak
 
 #Database
-*.sqlite3
+#*.sqlite3
 
 
 # Byte-compiled / optimized / DLL files
@@ -83,6 +83,7 @@ celerybeat-schedule
 # virtualenv
 .env
 .venv
+env1/
 env/
 venv/
 ENV/

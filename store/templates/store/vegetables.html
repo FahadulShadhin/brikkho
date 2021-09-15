@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block content %}
-    <h3>Vegetables</h3>
+    <h3>Vegetable Plants</h3>
     <hr>
     <div class="row">
         {% for product in products %}
@@ -16,7 +16,7 @@
                             Add to Cart
                         </button>
                         <a class="btn btn-outline-success" href="#">View</a>
-                        <h4 style="display: inline-block; float: right;">${{ product.price|floatformat:2 }}</h4>
+                        <h4 style="display: inline-block; float: right;">&#x9f3; {{ product.price|floatformat:2 }}</h4>
                     </div>
                 </div>
             {% endif %}

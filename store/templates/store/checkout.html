@@ -26,10 +26,10 @@
 							<input class="form-control" type="text" name="city" placeholder="City..">
 						</div>
 						<div class="form-field">
-							<input class="form-control" type="text" name="state" placeholder="State..">
+							<input class="form-control" type="text" name="state" placeholder="District..">
 						</div>
 						<div class="form-field">
-							<input class="form-control" type="text" name="zipcode" placeholder="Zip code..">
+							<input class="form-control" type="text" name="zipcode" placeholder="Area Code..">
 						</div>
 						<div class="form-field">
 							<input class="form-control" type="text" name="zipcode" placeholder="Phone..">
@@ -58,16 +58,17 @@
 					<div class="cart-row">
 						<div style="flex:2"><img class="row-image" src="{{ item.product.imageURL }}"></div>
 						<div style="flex:2"><p>{{ item.product.name }}</p></div>
-						<div style="flex:1"><p>${{ item.product.price }}</p></div>
+						<div style="flex:1"><p>&#x9f3; {{ item.product.price }}</p></div>
 						<div style="flex:1"><p>x{{ item.quantity }}</p></div>
 					</div>
 				{% endfor %}
 
 				<h5>Items:   {{ order.get_cart_items }}</h5>
-				<h5>Total:   ${{ order.get_cart_total|floatformat:2 }}</h5>
+				<h5>Total:   &#x9f3; {{ order.get_cart_total|floatformat:2 }}</h5>
             </div>
         </div>
 	</div>
+	<br><br><br>
 	
 	<script type="text/javascript">
 		var shipping = '{{ order.shipping }}'

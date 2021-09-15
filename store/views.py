@@ -82,6 +82,17 @@ def vegetables(request):
     }
     return render(request, 'store/vegetables.html', context)
 
+def medicine(request):
+    data = cartData(request) 
+    cartItems = data['cartItems']
+
+    products = Product.objects.all()
+    context = {
+        'products': products,
+        'cartItems': cartItems,
+    }
+    return render(request, 'store/medicine.html', context)
+
 def cart(request):
     data = cartData(request) 
     
