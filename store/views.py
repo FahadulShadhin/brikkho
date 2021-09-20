@@ -5,6 +5,7 @@ import datetime
 from .models import *
 from .utils import cookieCart, cartData, guestOrder
 
+
 def store(request):
     data = cartData(request) 
     cartItems = data['cartItems']
@@ -15,6 +16,15 @@ def store(request):
         'cartItems': cartItems,
     }
     return render(request, 'store/store.html', context)
+
+
+def services(request):
+    return render(request, 'store/services.html')
+
+
+def about(request):
+    return render(request, 'store/about.html')
+
 
 def plants(request):
     data = cartData(request) 
@@ -27,6 +37,7 @@ def plants(request):
     }
     return render(request, 'store/plants.html', context)
 
+
 def seeds(request):
     data = cartData(request) 
     cartItems = data['cartItems']
@@ -37,6 +48,7 @@ def seeds(request):
         'cartItems': cartItems,
     }
     return render(request, 'store/seeds.html', context)
+
 
 def cuttings(request):
     data = cartData(request) 
@@ -49,6 +61,7 @@ def cuttings(request):
     }
     return render(request, 'store/cuttings.html', context)
 
+
 def fruits(request):
     data = cartData(request) 
     cartItems = data['cartItems']
@@ -59,6 +72,7 @@ def fruits(request):
         'cartItems': cartItems,
     }
     return render(request, 'store/fruits.html', context)
+
 
 def flowers(request):
     data = cartData(request) 
@@ -71,6 +85,7 @@ def flowers(request):
     }
     return render(request, 'store/flowers.html', context)
 
+
 def vegetables(request):
     data = cartData(request) 
     cartItems = data['cartItems']
@@ -82,6 +97,7 @@ def vegetables(request):
     }
     return render(request, 'store/vegetables.html', context)
 
+
 def medicine(request):
     data = cartData(request) 
     cartItems = data['cartItems']
@@ -92,6 +108,7 @@ def medicine(request):
         'cartItems': cartItems,
     }
     return render(request, 'store/medicine.html', context)
+
 
 def cart(request):
     data = cartData(request) 
@@ -107,6 +124,7 @@ def cart(request):
     }
     return render(request, 'store/cart.html', context)
 
+
 def checkout(request):
     data = cartData(request) 
 
@@ -120,6 +138,7 @@ def checkout(request):
         'cartItems': cartItems,
     }
     return render(request, 'store/checkout.html', context)
+
 
 def updateItem(request):
     data = json.loads(request.body)
@@ -146,6 +165,7 @@ def updateItem(request):
         orderItem.delete()
 
     return JsonResponse('Item was added', safe=False)
+
 
 def processOrder(request):
     transaction_id = datetime.datetime.now().timestamp()

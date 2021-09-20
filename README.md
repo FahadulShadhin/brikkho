@@ -10,7 +10,7 @@ E-commerce website created with Django
 ## Run It:
 * Clone the project or download as zip:
 ```
-$ git clone https://github.com/FahadulShadhin/BRIKKHO-dot-com.git
+$ git clone https://github.com/FahadulShadhin/brikkho.git
 ```
 
 * Install required python packages:
