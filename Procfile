@@ -1,0 +1,1 @@
+web: gunicorn brikkho.wsgi --log-file -

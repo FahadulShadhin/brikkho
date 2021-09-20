@@ -22,9 +22,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: don't run with debug turned on in production!
 SECRET_KEY = 'tm39!!m=2#qmojp@ms!zusy28tdp03e#&d(8ickh2dr%7s*zz1'
 
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['brikkho-v1.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
