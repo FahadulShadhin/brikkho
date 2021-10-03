@@ -1,8 +1,8 @@
 # BRIKKHO.com
 E-commerce website created with Django
 
-## Database Model:
-<img src="erDiagram/ermodel.jpg">
+<!-- ## Database Model:
+<img src="erDiagram/ermodel.jpg"> -->
 
 ## Technologies Used:
  Django, Html, CSS, Bootstrap, Javascrpit, Sqlite3
