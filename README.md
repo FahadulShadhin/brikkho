@@ -26,13 +26,12 @@ $ python3 manage.py runserver
 <p>>> The website should be running at development server 127.0.0.1:8000</p>
 <p>>> Copy the link and open it in a browser.</p>
 
-* Get admin access:
-```
-$ python3 manage.py createsuperuser (enter username, email, password)
-```
-
 * Make migrations to database:
 ```
 $ python3 manage.py makemigrations
 $ python3 manage.py migrate
+```
+* Get admin access:
+```
+$ python3 manage.py createsuperuser (enter username, email, password)
 ```
