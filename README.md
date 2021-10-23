@@ -1,15 +1,16 @@
 # BRIKKHO.com
+E-commerce website created with Django
+
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
 ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
-
-#### E-commerce website created with Django
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 <!-- ## Database Model:
 <img src="erDiagram/ermodel.jpg"> -->
 
-## Technologies Used:
- Django, Html, CSS, Bootstrap, Javascrpit, Sqlite3
+<!-- ## Technologies Used:
+ Django, Html, CSS, Bootstrap, Javascrpit, Sqlite3 -->
 
 ## Run It:
 * Clone the project or download as zip:
