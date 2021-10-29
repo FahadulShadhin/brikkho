@@ -15,17 +15,17 @@ E-commerce website created with Django
 ## Run It:
 * Clone the project or download as zip:
 ```
-$ git clone https://github.com/FahadulShadhin/brikkho.git
+git clone https://github.com/FahadulShadhin/brikkho.git
 ```
 
 * Install required python packages:
 ```
-$ pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 * Run server:
 ```
-$ python3 manage.py runserver
+python3 manage.py runserver
 ```
 
 <p>>> The website should be running at development server 127.0.0.1:8000</p>
@@ -33,10 +33,10 @@ $ python3 manage.py runserver
 
 * Make migrations to database:
 ```
-$ python3 manage.py makemigrations
-$ python3 manage.py migrate
+python3 manage.py makemigrations
+python3 manage.py migrate
 ```
 * Get admin access:
 ```
-$ python3 manage.py createsuperuser (enter username, email, password)
+python3 manage.py createsuperuser (enter username, email, password)
 ```
